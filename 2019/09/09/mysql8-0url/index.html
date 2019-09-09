@@ -12,12 +12,12 @@
 
 
 
-  <meta name="description" content="first-blog">
+  <meta name="description" content="mysql8.0url">
 
 
 
 
-  <meta name="keywords" content="blog,">
+  <meta name="keywords" content="mysql,">
 
 
 
@@ -32,21 +32,21 @@
 
 
 
-<link rel="canonical" href="http://yoursite.com/2019/09/03/first-blog/">
+<link rel="canonical" href="http://yoursite.com/2019/09/09/mysql8-0url/">
 
 
-<meta name="description" content="这是从创建以来的第一篇博客。我给他取名为…anlythree的🌰库！不知道以后会不会一直坚持更新，但是一想到自己在互联网上也拥有了自己的一亩三分地…应该会有动力的吧。">
-<meta name="keywords" content="blog">
+<meta name="description" content="众所周知mysql从8.0后就开始变得很挑剔，连个url都要加一堆东西。还好加的东西不多也就这么些吧。 1?useSSL=false&amp;amp;serverTimezone=UTC&amp;amp;allowPublicKeyRetrieval=true&amp;amp;characterEncoding=UTF-8  所以一个完整的mysql数据源配置差不多就是这个样子（driver中的cj就是从8.0开始加的）">
+<meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="first-blog">
-<meta property="og:url" content="http://yoursite.com/2019/09/03/first-blog/index.html">
+<meta property="og:title" content="mysql8.0url">
+<meta property="og:url" content="http://yoursite.com/2019/09/09/mysql8-0url/index.html">
 <meta property="og:site_name" content="anlythree&#39;s blog">
-<meta property="og:description" content="这是从创建以来的第一篇博客。我给他取名为…anlythree的🌰库！不知道以后会不会一直坚持更新，但是一想到自己在互联网上也拥有了自己的一亩三分地…应该会有动力的吧。">
+<meta property="og:description" content="众所周知mysql从8.0后就开始变得很挑剔，连个url都要加一堆东西。还好加的东西不多也就这么些吧。 1?useSSL=false&amp;amp;serverTimezone=UTC&amp;amp;allowPublicKeyRetrieval=true&amp;amp;characterEncoding=UTF-8  所以一个完整的mysql数据源配置差不多就是这个样子（driver中的cj就是从8.0开始加的）">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-09T02:54:59.474Z">
+<meta property="og:updated_time" content="2019-09-09T02:49:12.109Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="first-blog">
-<meta name="twitter:description" content="这是从创建以来的第一篇博客。我给他取名为…anlythree的🌰库！不知道以后会不会一直坚持更新，但是一想到自己在互联网上也拥有了自己的一亩三分地…应该会有动力的吧。">
+<meta name="twitter:title" content="mysql8.0url">
+<meta name="twitter:description" content="众所周知mysql从8.0后就开始变得很挑剔，连个url都要加一堆东西。还好加的东西不多也就这么些吧。 1?useSSL=false&amp;amp;serverTimezone=UTC&amp;amp;allowPublicKeyRetrieval=true&amp;amp;characterEncoding=UTF-8  所以一个完整的mysql数据源配置差不多就是这个样子（driver中的cj就是从8.0开始加的）">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
@@ -71,7 +71,7 @@
 
 
 
-    <title> first-blog - anlythree's blog </title>
+    <title> mysql8.0url - anlythree's blog </title>
   </head>
 
   <body>
@@ -117,12 +117,12 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          first-blog
+          mysql8.0url
         
       </h1>
 
       <time class="post-time">
-          Sep 03 2019
+          Sep 09 2019
       </time>
     </header>
 
@@ -130,8 +130,11 @@
 
     
             <div class="post-content">
-            <p>这是从创建以来的第一篇博客。我给他取名为…anlythree的🌰库！<br>不知道以后会不会一直坚持更新，但是一想到自己在互联网上也拥有了自己的一亩三分地…应该会有动力的吧。</p>
+            <p>众所周知mysql从8.0后就开始变得很挑剔，连个url都要加一堆东西。还好加的东西不多也就这么些吧。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;characterEncoding=UTF-8</span><br></pre></td></tr></table></figure>
 
+<p>所以一个完整的mysql数据源配置差不多就是这个样子（driver中的cj就是从8.0开始加的）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">driver = com.mysql.cj.jdbc.Driver</span><br><span class="line">url = jdbc:mysql://localhost:3306/vg?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;characterEncoding=UTF-8</span><br><span class="line">userName = root</span><br><span class="line">passWd = 132</span><br></pre></td></tr></table></figure>
             </div>
           
 
@@ -140,7 +143,7 @@
 		
 		<div class="post-tags">
 		  
-			<a href="/tags/blog/">blog</a>
+			<a href="/tags/mysql/">mysql</a>
 		  
 		</div>
 		
@@ -149,12 +152,18 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/2019/09/06/linux上用防火墙路由80端口到其他端口/">
+      <a class="prev" href="/2019/09/09/struts常见报错/">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">linux上用防火墙路由80端口请求到其他端口</span>
+        <span class="prev-text nav-default">struts2常见报错</span>
         <span class="prev-text nav-mobile">Prev</span>
       </a>
     
+    
+      <a class="next" href="/2019/09/06/linux上配置JDK/">
+        <span class="next-text nav-default">linux上配置JDK</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 

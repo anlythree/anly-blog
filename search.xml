@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[first-blog]]></title>
-    <url>%2F2019%2F09%2F03%2Ffirst-blog%2F</url>
-    <content type="text"><![CDATA[这是博客从创建以来的第一篇博客。我给他取名为…anlythree的🌰库！虽然我也知道这个服务器也就剩22天…]]></content>
+    <title><![CDATA[struts2常见报错]]></title>
+    <url>%2F2019%2F09%2F09%2Fstruts%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99%2F</url>
+    <content type="text"><![CDATA[1、关于There is no Action mapped for namespace [/] and action name [Login] associated wi这个错误 一、struts.xml文件错误。这种错误又分为以下几种：1，struts.xml文件名错误。一定要注意拼写问题；2，struts.xml文件放置路径错误。一定要将此文件放置在src目录下。编译成功后，要确认是否编译到classes目录中；3，struts.xml文件内容错误。下面给出一个正确的struts.xml文件以供参考。注意背景色部分。 123456789101112&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&lt;!DOCTYPE struts PUBLIC&quot;-//Apache Software Foundation//DTD Struts Configuration 2.0//EN&quot;&quot;http://struts.apache.org/dtds/struts-2.0.dtd&quot;&gt;&lt;struts&gt;&lt;package name=&quot;default&quot; namespace=&quot;/&quot; extends=&quot;struts-default&quot;&gt;&lt;action name=&quot;login&quot; class=&quot;com.wanggc.struts2.sample.Struts2Action&quot;&gt;&lt;result name=&quot;success&quot;&gt;/jsp/result.jsp&lt;/result&gt;&lt;/action&gt;&lt;/package&gt;&lt;/struts&gt; 二、如果排除了struts.xml文件的问题，还有一种可能就是，在web.xml文件中的信息中是否配置了自己工程的启动页面。如果没有配置，地址栏中要输入完整的url，如：http://localhost:8080/Struts2Sample/jsp/login.jsp。后面的资源详细信息不输入的时候也会报这个错误，我就是栽在这个问题上的(^_^)。 原文链接： 孤旅者 ——Struts2中关于"There is no Action mapped for namespace / and action name"的总结 2、关于404No result defined for action top.anlythree.struts.loginAction and result fail这个错误这个错误其实很简单，就是action中没有规定fail这个result的映射路径或前端静态文件位置。所以找到对应的action加上fail的文件映射就好]]></content>
       <tags>
-        <tag>blog</tag>
+        <tag>struts2</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F09%2F03%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[mysql8.0url]]></title>
+    <url>%2F2019%2F09%2F09%2Fmysql8-0url%2F</url>
+    <content type="text"><![CDATA[众所周知mysql从8.0后就开始变得很挑剔，连个url都要加一堆东西。还好加的东西不多也就这么些吧。 1?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;characterEncoding=UTF-8 所以一个完整的mysql数据源配置差不多就是这个样子（driver中的cj就是从8.0开始加的）： 1234driver = com.mysql.cj.jdbc.Driver url = jdbc:mysql://localhost:3306/vg?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;characterEncoding=UTF-8 userName = root passWd = 132]]></content>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux上配置JDK]]></title>
+    <url>%2F2019%2F09%2F06%2Flinux%E4%B8%8A%E9%85%8D%E7%BD%AEJDK%2F</url>
+    <content type="text"><![CDATA[1.官网下载JDK 地址: https://www.oracle.com/technetwork/java/javase/archive-139210.html点击自己需要的版本进行下载即可2.解压缩,放到指定目录(以jdk-7u60-linux-x64.gz为例)创建目录: 1$ sudo mkdir /usr/lib/jvm 加压缩到该目录: 1$ sudo tar -zxvf jdk-7u60-linux-x64.gz -C /usr/lib/jvm 3.修改环境变量:jdk1.8.0_192 1$ sudo vim ~/.bashrc 文件的末尾追加下面内容:jdk1.8.0_212 12345#set oracle jdk environmentexport JAVA_HOME=/usr/lib/jvm/jdk1.7.0_60 ## 这里要注意目录要换成自己解压的jdk 目录export JRE_HOME=$&#123;JAVA_HOME&#125;/jre export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH 使环境变量马上生效 1$ source ~/.bashrc]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux上用防火墙路由80端口请求到其他端口]]></title>
+    <url>%2F2019%2F09%2F06%2Flinux%E4%B8%8A%E7%94%A8%E9%98%B2%E7%81%AB%E5%A2%99%E8%B7%AF%E7%94%B180%E7%AB%AF%E5%8F%A3%E5%88%B0%E5%85%B6%E4%BB%96%E7%AB%AF%E5%8F%A3%2F</url>
+    <content type="text"><![CDATA[首先为什么要从80端口路由到别的端口： 1：因为linux系统中只有root用户有权限调用80端口，加入服务器中只有一个服务那么这个服务就要用root账户去执行 而用root账户去执行服务是一种很不安全的选择2：假如服务器中不止要布置一个服务，那么就需要不同的端口号来区分服务。用户访问的时候就需要在浏览器上输入网址（或域名）加端口号，例如helloworld.com:8080。这样输入很不方便也不实际，而web应用如果不输入端口号就是80端口，所以就需要从80端口路由到别的端口。 一：用root账号执行 1$ iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080 二：如果提示以下信息： 1$ iptables command not found 则需要进行以下操作：另外如果防火墙重新启动，该命令就会失效。可以使用下面的命令把该规则保存到iptables里面 ： 1$ service iptables save 原文链接： 人生苦短抓紧挣钱 ——linux通过防火墙将80端口转到其它端口]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[first-blog]]></title>
+    <url>%2F2019%2F09%2F03%2Ffirst-blog%2F</url>
+    <content type="text"><![CDATA[这是从创建以来的第一篇博客。我给他取名为…anlythree的🌰库！不知道以后会不会一直坚持更新，但是一想到自己在互联网上也拥有了自己的一亩三分地…应该会有动力的吧。]]></content>
       <tags>
         <tag>blog</tag>
       </tags>

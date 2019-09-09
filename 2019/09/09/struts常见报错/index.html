@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="description" content="struts2常见报错">
+
+
+
+
+  <meta name="keywords" content="struts2,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="anlythree's blog">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1">
+
+
+
+<link rel="canonical" href="http://yoursite.com/2019/09/09/struts常见报错/">
+
+
+<meta name="description" content="1、关于There is no Action mapped for namespace [/] and action name [Login] associated wi这个错误 一、struts.xml文件错误。这种错误又分为以下几种：1，struts.xml文件名错误。一定要注意拼写问题；2，struts.xml文件放置路径错误。一定要将此文件放置在src目录下。编译成功后，要确认是否编译到c">
+<meta name="keywords" content="struts2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="struts2常见报错">
+<meta property="og:url" content="http://yoursite.com/2019/09/09/struts常见报错/index.html">
+<meta property="og:site_name" content="anlythree&#39;s blog">
+<meta property="og:description" content="1、关于There is no Action mapped for namespace [/] and action name [Login] associated wi这个错误 一、struts.xml文件错误。这种错误又分为以下几种：1，struts.xml文件名错误。一定要注意拼写问题；2，struts.xml文件放置路径错误。一定要将此文件放置在src目录下。编译成功后，要确认是否编译到c">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-09T02:47:58.037Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="struts2常见报错">
+<meta name="twitter:description" content="1、关于There is no Action mapped for namespace [/] and action name [Login] associated wi这个错误 一、struts.xml文件错误。这种错误又分为以下几种：1，struts.xml文件名错误。一定要注意拼写问题；2，struts.xml文件放置路径错误。一定要将此文件放置在src目录下。编译成功后，要确认是否编译到c">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> struts2常见报错 - anlythree's blog </title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">anlythree's blog</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          struts2常见报错
+        
+      </h1>
+
+      <time class="post-time">
+          Sep 09 2019
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <p><strong>1、关于There is no Action mapped for namespace [/] and action name [Login] associated wi这个错误</strong></p>
+<p>一、struts.xml文件错误。这种错误又分为以下几种：1，struts.xml文件名错误。一定要注意拼写问题；2，struts.xml文件放置路径错误。一定要将此文件放置在src目录下。编译成功后，要确认是否编译到classes目录中；3，struts.xml文件内容错误。下面给出一个正确的struts.xml文件以供参考。注意背景色部分。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span><br><span class="line">&lt;!DOCTYPE struts PUBLIC</span><br><span class="line">&quot;-//Apache Software Foundation//DTD Struts Configuration 2.0//EN&quot;</span><br><span class="line">&quot;http://struts.apache.org/dtds/struts-2.0.dtd&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;struts&gt;</span><br><span class="line">&lt;package name=&quot;default&quot; namespace=&quot;/&quot; extends=&quot;struts-default&quot;&gt;</span><br><span class="line">&lt;action name=&quot;login&quot; class=&quot;com.wanggc.struts2.sample.Struts2Action&quot;&gt;</span><br><span class="line">&lt;result name=&quot;success&quot;&gt;/jsp/result.jsp&lt;/result&gt;</span><br><span class="line">&lt;/action&gt;</span><br><span class="line">&lt;/package&gt;</span><br><span class="line">&lt;/struts&gt;</span><br></pre></td></tr></table></figure>
+
+<p>二、如果排除了struts.xml文件的问题，还有一种可能就是，在web.xml文件中的<welcome-file>信息中是否配置了自己工程的启动页面。如果没有配置，地址栏中要输入完整的url，如：<a href="http://localhost:8080/Struts2Sample/jsp/login.jsp。" target="_blank" rel="noopener">http://localhost:8080/Struts2Sample/jsp/login.jsp。</a><br>后面的资源详细信息不输入的时候也会报这个错误，我就是栽在这个问题上的(^_^)。</welcome-file></p>
+<p>原文链接：</p>
+<blockquote><footer><strong>孤旅者 ——</strong><cite><a href="https://www.cnblogs.com/gulvzhe/archive/2011/11/21/2256632.html" target="_blank" rel="noopener">Struts2中关于"There is no Action mapped for namespace / and action name"的总结</a></cite></footer></blockquote>
+
+<p><strong>2、关于404No result defined for action top.anlythree.struts.loginAction and result fail这个错误</strong><br>这个错误其实很简单，就是action中没有规定fail这个result的映射路径或前端静态文件位置。所以找到对应的action加上fail的文件映射就好</p>
+
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/struts2/">struts2</a>
+		  
+		</div>
+		
+
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2019/09/09/mysql8-0url/">
+        <span class="next-text nav-default">mysql8.0url</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2019
+    <span class="footer-author">anlythree.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="description" content="linux上配置JDK">
+
+
+
+
+  <meta name="keywords" content="linux,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="anlythree's blog">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1">
+
+
+
+<link rel="canonical" href="http://yoursite.com/2019/09/06/linux上配置JDK/">
+
+
+<meta name="description" content="1.官网下载JDK     地址: https://www.oracle.com/technetwork/java/javase/archive-139210.html点击自己需要的版本进行下载即可2.解压缩,放到指定目录(以jdk-7u60-linux-x64.gz为例)创建目录: 1$ sudo mkdir /usr/lib/jvm  加压缩到该目录: 1$ sudo tar -zxvf jd">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux上配置JDK">
+<meta property="og:url" content="http://yoursite.com/2019/09/06/linux上配置JDK/index.html">
+<meta property="og:site_name" content="anlythree&#39;s blog">
+<meta property="og:description" content="1.官网下载JDK     地址: https://www.oracle.com/technetwork/java/javase/archive-139210.html点击自己需要的版本进行下载即可2.解压缩,放到指定目录(以jdk-7u60-linux-x64.gz为例)创建目录: 1$ sudo mkdir /usr/lib/jvm  加压缩到该目录: 1$ sudo tar -zxvf jd">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-09T02:50:13.137Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="linux上配置JDK">
+<meta name="twitter:description" content="1.官网下载JDK     地址: https://www.oracle.com/technetwork/java/javase/archive-139210.html点击自己需要的版本进行下载即可2.解压缩,放到指定目录(以jdk-7u60-linux-x64.gz为例)创建目录: 1$ sudo mkdir /usr/lib/jvm  加压缩到该目录: 1$ sudo tar -zxvf jd">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> linux上配置JDK - anlythree's blog </title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">anlythree's blog</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          linux上配置JDK
+        
+      </h1>
+
+      <time class="post-time">
+          Sep 06 2019
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <p>1.官网下载JDK<br>     地址: <a href="https://www.oracle.com/technetwork/java/javase/archive-139210.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/archive-139210.html</a><br>点击自己需要的版本进行下载即可<br><br><br>2.解压缩,放到指定目录(以jdk-7u60-linux-x64.gz为例)<br>创建目录:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo mkdir /usr/lib/jvm</span><br></pre></td></tr></table></figure>
+
+<p>加压缩到该目录:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo tar -zxvf jdk-7u60-linux-x64.gz -C /usr/lib/jvm</span><br></pre></td></tr></table></figure>
+
+<p>3.修改环境变量:jdk1.8.0_192</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vim ~/.bashrc</span><br></pre></td></tr></table></figure>
+
+<p>文件的末尾追加下面内容:jdk1.8.0_212</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#set oracle jdk environment</span><br><span class="line">export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_60  ## 这里要注意目录要换成自己解压的jdk 目录</span><br><span class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  </span><br><span class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib  </span><br><span class="line">export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure>
+
+<p>使环境变量马上生效</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
+
+
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/linux/">linux</a>
+		  
+		</div>
+		
+
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2019/09/09/mysql8-0url/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">mysql8.0url</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2019/09/06/linux上用防火墙路由80端口到其他端口/">
+        <span class="next-text nav-default">linux上用防火墙路由80端口请求到其他端口</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2019
+    <span class="footer-author">anlythree.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>

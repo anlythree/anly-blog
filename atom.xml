@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-04T11:35:51.650Z</updated>
+  <updated>2019-09-09T02:47:58.037Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,44 +17,119 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>first-blog</title>
-    <link href="http://yoursite.com/2019/09/03/first-blog/"/>
-    <id>http://yoursite.com/2019/09/03/first-blog/</id>
-    <published>2019-09-03T08:24:36.000Z</published>
-    <updated>2019-09-04T11:35:51.650Z</updated>
+    <title>struts2常见报错</title>
+    <link href="http://yoursite.com/2019/09/09/struts%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/"/>
+    <id>http://yoursite.com/2019/09/09/struts常见报错/</id>
+    <published>2019-09-09T02:37:13.000Z</published>
+    <updated>2019-09-09T02:47:58.037Z</updated>
     
-    <content type="html"><![CDATA[<p>这是博客从创建以来的第一篇博客。<br>我给他取名为…anlythree的🌰库！<br>虽然我也知道这个服务器也就剩22天…</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>1、关于There is no Action mapped for namespace [/] and action name [Login] associated wi这个错误</strong></p><p>一、struts.xml文件错误。这种错误又分为以下几种：1，struts.xml文件名错误。一定要注意拼写问题；2，struts.xml文件放置路径错误。一定要将此文件放置在src目录下。编译成功后，要确认是否编译到classes目录中；3，struts.xml文件内容错误。下面给出一个正确的struts.xml文件以供参考。注意背景色部分。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span><br><span class="line">&lt;!DOCTYPE struts PUBLIC</span><br><span class="line">&quot;-//Apache Software Foundation//DTD Struts Configuration 2.0//EN&quot;</span><br><span class="line">&quot;http://struts.apache.org/dtds/struts-2.0.dtd&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;struts&gt;</span><br><span class="line">&lt;package name=&quot;default&quot; namespace=&quot;/&quot; extends=&quot;struts-default&quot;&gt;</span><br><span class="line">&lt;action name=&quot;login&quot; class=&quot;com.wanggc.struts2.sample.Struts2Action&quot;&gt;</span><br><span class="line">&lt;result name=&quot;success&quot;&gt;/jsp/result.jsp&lt;/result&gt;</span><br><span class="line">&lt;/action&gt;</span><br><span class="line">&lt;/package&gt;</span><br><span class="line">&lt;/struts&gt;</span><br></pre></td></tr></table></figure><p>二、如果排除了struts.xml文件的问题，还有一种可能就是，在web.xml文件中的<welcome-file>信息中是否配置了自己工程的启动页面。如果没有配置，地址栏中要输入完整的url，如：<a href="http://localhost:8080/Struts2Sample/jsp/login.jsp。" target="_blank" rel="noopener">http://localhost:8080/Struts2Sample/jsp/login.jsp。</a><br>后面的资源详细信息不输入的时候也会报这个错误，我就是栽在这个问题上的(^_^)。</welcome-file></p><p>原文链接：</p><blockquote><footer><strong>孤旅者 ——</strong><cite><a href="https://www.cnblogs.com/gulvzhe/archive/2011/11/21/2256632.html" target="_blank" rel="noopener">Struts2中关于"There is no Action mapped for namespace / and action name"的总结</a></cite></footer></blockquote><p><strong>2、关于404No result defined for action top.anlythree.struts.loginAction and result fail这个错误</strong><br>这个错误其实很简单，就是action中没有规定fail这个result的映射路径或前端静态文件位置。所以找到对应的action加上fail的文件映射就好</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;这是博客从创建以来的第一篇博客。&lt;br&gt;我给他取名为…anlythree的🌰库！&lt;br&gt;虽然我也知道这个服务器也就剩22天…&lt;/p&gt;
-
+        &lt;p&gt;&lt;strong&gt;1、关于There is no Action mapped for namespace [/] and action name [Login] associated wi这个错误&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一、struts.xml文件错误。这种错误又分
       
     
     </summary>
     
     
     
-      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+      <category term="struts2" scheme="http://yoursite.com/tags/struts2/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/09/03/hello-world/"/>
-    <id>http://yoursite.com/2019/09/03/hello-world/</id>
-    <published>2019-09-03T06:38:38.031Z</published>
-    <updated>2019-09-04T11:36:14.122Z</updated>
+    <title>mysql8.0url</title>
+    <link href="http://yoursite.com/2019/09/09/mysql8-0url/"/>
+    <id>http://yoursite.com/2019/09/09/mysql8-0url/</id>
+    <published>2019-09-09T02:29:39.000Z</published>
+    <updated>2019-09-09T02:49:12.109Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>众所周知mysql从8.0后就开始变得很挑剔，连个url都要加一堆东西。还好加的东西不多也就这么些吧。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;characterEncoding=UTF-8</span><br></pre></td></tr></table></figure><p>所以一个完整的mysql数据源配置差不多就是这个样子（driver中的cj就是从8.0开始加的）：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">driver = com.mysql.cj.jdbc.Driver</span><br><span class="line">url = jdbc:mysql://localhost:3306/vg?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;characterEncoding=UTF-8</span><br><span class="line">userName = root</span><br><span class="line">passWd = 132</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;众所周知mysql从8.0后就开始变得很挑剔，连个url都要加一堆东西。还好加的东西不多也就这么些吧。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;l
+      
+    
+    </summary>
+    
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux上配置JDK</title>
+    <link href="http://yoursite.com/2019/09/06/linux%E4%B8%8A%E9%85%8D%E7%BD%AEJDK/"/>
+    <id>http://yoursite.com/2019/09/06/linux上配置JDK/</id>
+    <published>2019-09-06T07:40:33.000Z</published>
+    <updated>2019-09-09T02:50:13.137Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.官网下载JDK<br>     地址: <a href="https://www.oracle.com/technetwork/java/javase/archive-139210.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/archive-139210.html</a><br>点击自己需要的版本进行下载即可<br><br><br>2.解压缩,放到指定目录(以jdk-7u60-linux-x64.gz为例)<br>创建目录:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo mkdir /usr/lib/jvm</span><br></pre></td></tr></table></figure><p>加压缩到该目录:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo tar -zxvf jdk-7u60-linux-x64.gz -C /usr/lib/jvm</span><br></pre></td></tr></table></figure><p>3.修改环境变量:jdk1.8.0_192</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vim ~/.bashrc</span><br></pre></td></tr></table></figure><p>文件的末尾追加下面内容:jdk1.8.0_212</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#set oracle jdk environment</span><br><span class="line">export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_60  ## 这里要注意目录要换成自己解压的jdk 目录</span><br><span class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  </span><br><span class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib  </span><br><span class="line">export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure><p>使环境变量马上生效</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.官网下载JDK&lt;br&gt;     地址: &lt;a href=&quot;https://www.oracle.com/technetwork/java/javase/archive-139210.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https:/
+      
+    
+    </summary>
+    
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux上用防火墙路由80端口请求到其他端口</title>
+    <link href="http://yoursite.com/2019/09/06/linux%E4%B8%8A%E7%94%A8%E9%98%B2%E7%81%AB%E5%A2%99%E8%B7%AF%E7%94%B180%E7%AB%AF%E5%8F%A3%E5%88%B0%E5%85%B6%E4%BB%96%E7%AB%AF%E5%8F%A3/"/>
+    <id>http://yoursite.com/2019/09/06/linux上用防火墙路由80端口到其他端口/</id>
+    <published>2019-09-06T03:29:37.000Z</published>
+    <updated>2019-09-06T07:39:03.537Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先为什么要从80端口路由到别的端口：</p><p>1：因为linux系统中只有root用户有权限调用80端口，加入服务器中只有一个服务那么这个服务就要用root账户去执行<br>    而用root账户去执行服务是一种很不安全的选择<br>2：假如服务器中不止要布置一个服务，那么就需要不同的端口号来区分服务。用户访问的时候就需要在浏览器上输入网址（或域名）加端口号，例如helloworld.com:8080。这样输入很不方便也不实际，而web应用如果不输入端口号就是80端口，所以就需要从80端口路由到别的端口。</p><p>一：用root账号执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080</span><br></pre></td></tr></table></figure><p>二：如果提示以下信息：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ iptables <span class="built_in">command</span> not found</span><br></pre></td></tr></table></figure><p>则需要进行以下操作：<br>另外如果防火墙重新启动，该命令就会失效。<br>可以使用下面的命令把该规则保存到iptables里面 ：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ service iptables save</span><br></pre></td></tr></table></figure><p>原文链接：</p><blockquote><footer><strong>人生苦短抓紧挣钱 ——</strong><cite><a href="https://blog.csdn.net/qq_37595931/article/details/79217864" target="_blank" rel="noopener">linux通过防火墙将80端口转到其它端口</a></cite></footer></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;首先为什么要从80端口路由到别的端口：&lt;/p&gt;
+&lt;p&gt;1：因为linux系统中只有root用户有权限调用80端口，加入服务器中只有一个服务那么这个服务就要用root账户去执行&lt;br&gt;    而用root账户去执行服务是一种很不安全的选择&lt;br&gt;2：假如服务器中不止要布置一个
+      
+    
+    </summary>
+    
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>first-blog</title>
+    <link href="http://yoursite.com/2019/09/03/first-blog/"/>
+    <id>http://yoursite.com/2019/09/03/first-blog/</id>
+    <published>2019-09-03T08:24:36.000Z</published>
+    <updated>2019-09-09T02:54:59.474Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是从创建以来的第一篇博客。我给他取名为…anlythree的🌰库！<br>不知道以后会不会一直坚持更新，但是一想到自己在互联网上也拥有了自己的一亩三分地…应该会有动力的吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是从创建以来的第一篇博客。我给他取名为…anlythree的🌰库！&lt;br&gt;不知道以后会不会一直坚持更新，但是一想到自己在互联网上也拥有了自己的一亩三分地…应该会有动力的吧。&lt;/p&gt;
+
       
     
     </summary>
