@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://anlythree.top/"/>
-  <updated>2020-01-08T07:59:46.861Z</updated>
+  <updated>2020-01-08T11:41:33.779Z</updated>
   <id>http://anlythree.top/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://anlythree.top/2020/01/08/idea%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E8%AE%B0%E5%BD%95/"/>
     <id>http://anlythree.top/2020/01/08/idea中常用插件记录/</id>
     <published>2020-01-08T07:05:23.000Z</published>
-    <updated>2020-01-08T07:59:46.861Z</updated>
+    <updated>2020-01-08T11:41:33.779Z</updated>
     
-    <content type="html"><![CDATA[<p>前几天idea重装了，之前安装的插件全忘了。所以有必要记录一下自己用的舒心的idea插件🔧<br><br><br>1、首先排首位的肯定是<b>lomback</b>了,否则之前用@data注解自动生成的getter()、setter()方法都是不能用的<br><br><br><br><br>2、其次是<b>Mybatis Log Plugin</b>这个插件在idea中有单独的log窗口，像debug一样。里面可以显示最近运行的sql语句。而且是已经把？替换成确切值的sql语句，这样debug的时候就可以判断是不是sql语句拼错了<br><br><br><br><br>3、<b>MybatisCodeHelperPro</b>,这个插件是MybatisCodeHelper的升级版。升级的功能在于可以直接试运行mapper文件中的sql语句。但是需要付费使用（说不定以后有钱了怎么办）当然不付费的话，一些基本功能也是有的：比如通过dao层接口寻找mapper文件中的指定标签，自动检测mapper文件中是否已经存在dao层的方法<br><br><br><br><br>4、<b>Translation</b>，这个插件是我在idea中用过的最好用的翻译插件。优点在于可以直接使用快捷键来翻译鼠标选中的文字，包括debug中的报错，idea中的提示。</p>]]></content>
+    <content type="html"><![CDATA[<p>前几天idea重装了，之前安装的插件全忘了。所以有必要记录一下自己用的舒心的idea插件🔧<br><br><br>1、首先排首位的肯定是<b>lomback</b>了,否则之前用@data注解自动生成的getter()、setter()方法都是不能用的<br><img src="/.top//idea%E6%8F%92%E4%BB%B6.jpg" alt="idea 截图"><br><br><br><br><br>2、其次是<b>Mybatis Log Plugin</b>这个插件在idea中有单独的log窗口，像debug一样。里面可以显示最近运行的sql语句。而且是已经把？替换成确切值的sql语句，这样debug的时候就可以判断是不是sql语句拼错了<br><br><br><br><br>3、<b>MybatisCodeHelperPro</b>,这个插件是MybatisCodeHelper的升级版。升级的功能在于可以直接试运行mapper文件中的sql语句。但是需要付费使用（说不定以后有钱了怎么办）当然不付费的话，一些基本功能也是有的：比如通过dao层接口寻找mapper文件中的指定标签，自动检测mapper文件中是否已经存在dao层的方法<br><br><br><br><br>4、<b>Translation</b>，这个插件是我在idea中用过的最好用的翻译插件。优点在于可以直接使用快捷键来翻译鼠标选中的文字，包括debug中的报错，idea中的提示。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;前几天idea重装了，之前安装的插件全忘了。所以有必要记录一下自己用的舒心的idea插件🔧&lt;br&gt;&lt;br&gt;&lt;br&gt;1、首先排首位的肯定是&lt;b&gt;lomback&lt;/b&gt;了,否则之前用@data注解自动生成的getter()、setter()方法都是不能用的&lt;br&gt;&lt;br&gt;&lt;b
+        &lt;p&gt;前几天idea重装了，之前安装的插件全忘了。所以有必要记录一下自己用的舒心的idea插件🔧&lt;br&gt;&lt;br&gt;&lt;br&gt;1、首先排首位的肯定是&lt;b&gt;lomback&lt;/b&gt;了,否则之前用@data注解自动生成的getter()、setter()方法都是不能用的&lt;br&gt;&lt;img s
       
     
     </summary>
