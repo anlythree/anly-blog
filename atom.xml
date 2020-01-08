@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-12-29T02:32:47.351Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://anlythree.top/"/>
+  <updated>2020-01-08T07:59:46.861Z</updated>
+  <id>http://anlythree.top/</id>
   
   <author>
     <name>anlythree</name>
@@ -17,9 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>idea中常用插件记录</title>
+    <link href="http://anlythree.top/2020/01/08/idea%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E8%AE%B0%E5%BD%95/"/>
+    <id>http://anlythree.top/2020/01/08/idea中常用插件记录/</id>
+    <published>2020-01-08T07:05:23.000Z</published>
+    <updated>2020-01-08T07:59:46.861Z</updated>
+    
+    <content type="html"><![CDATA[<p>前几天idea重装了，之前安装的插件全忘了。所以有必要记录一下自己用的舒心的idea插件🔧<br><br><br>1、首先排首位的肯定是<b>lomback</b>了,否则之前用@data注解自动生成的getter()、setter()方法都是不能用的<br><br><br><br><br>2、其次是<b>Mybatis Log Plugin</b>这个插件在idea中有单独的log窗口，像debug一样。里面可以显示最近运行的sql语句。而且是已经把？替换成确切值的sql语句，这样debug的时候就可以判断是不是sql语句拼错了<br><br><br><br><br>3、<b>MybatisCodeHelperPro</b>,这个插件是MybatisCodeHelper的升级版。升级的功能在于可以直接试运行mapper文件中的sql语句。但是需要付费使用（说不定以后有钱了怎么办）当然不付费的话，一些基本功能也是有的：比如通过dao层接口寻找mapper文件中的指定标签，自动检测mapper文件中是否已经存在dao层的方法<br><br><br><br><br>4、<b>Translation</b>，这个插件是我在idea中用过的最好用的翻译插件。优点在于可以直接使用快捷键来翻译鼠标选中的文字，包括debug中的报错，idea中的提示。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前几天idea重装了，之前安装的插件全忘了。所以有必要记录一下自己用的舒心的idea插件🔧&lt;br&gt;&lt;br&gt;&lt;br&gt;1、首先排首位的肯定是&lt;b&gt;lomback&lt;/b&gt;了,否则之前用@data注解自动生成的getter()、setter()方法都是不能用的&lt;br&gt;&lt;br&gt;&lt;b
+      
+    
+    </summary>
+    
+    
+    
+      <category term="idea" scheme="http://anlythree.top/tags/idea/"/>
+    
+  </entry>
+  
+  <entry>
     <title>idea激活🔑</title>
-    <link href="http://yoursite.com/2019/10/17/idea%E6%BF%80%E6%B4%BB%E7%A0%81/"/>
-    <id>http://yoursite.com/2019/10/17/idea激活码/</id>
+    <link href="http://anlythree.top/2019/10/17/idea%E6%BF%80%E6%B4%BB%E7%A0%81/"/>
+    <id>http://anlythree.top/2019/10/17/idea激活码/</id>
     <published>2019-10-17T09:11:25.000Z</published>
     <updated>2019-12-29T02:32:47.351Z</updated>
     
@@ -37,14 +61,14 @@
     
     
     
-      <category term="idea" scheme="http://yoursite.com/tags/idea/"/>
+      <category term="idea" scheme="http://anlythree.top/tags/idea/"/>
     
   </entry>
   
   <entry>
     <title>struts2常见报错</title>
-    <link href="http://yoursite.com/2019/09/09/struts%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/"/>
-    <id>http://yoursite.com/2019/09/09/struts常见报错/</id>
+    <link href="http://anlythree.top/2019/09/09/struts%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/"/>
+    <id>http://anlythree.top/2019/09/09/struts常见报错/</id>
     <published>2019-09-09T02:37:13.000Z</published>
     <updated>2019-09-09T02:47:58.037Z</updated>
     
@@ -62,14 +86,14 @@
     
     
     
-      <category term="struts2" scheme="http://yoursite.com/tags/struts2/"/>
+      <category term="struts2" scheme="http://anlythree.top/tags/struts2/"/>
     
   </entry>
   
   <entry>
     <title>mysql8.0url</title>
-    <link href="http://yoursite.com/2019/09/09/mysql8-0url/"/>
-    <id>http://yoursite.com/2019/09/09/mysql8-0url/</id>
+    <link href="http://anlythree.top/2019/09/09/mysql8-0url/"/>
+    <id>http://anlythree.top/2019/09/09/mysql8-0url/</id>
     <published>2019-09-09T02:29:39.000Z</published>
     <updated>2019-09-09T02:49:12.109Z</updated>
     
@@ -87,14 +111,14 @@
     
     
     
-      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+      <category term="mysql" scheme="http://anlythree.top/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>linux上配置JDK</title>
-    <link href="http://yoursite.com/2019/09/06/linux%E4%B8%8A%E9%85%8D%E7%BD%AEJDK/"/>
-    <id>http://yoursite.com/2019/09/06/linux上配置JDK/</id>
+    <link href="http://anlythree.top/2019/09/06/linux%E4%B8%8A%E9%85%8D%E7%BD%AEJDK/"/>
+    <id>http://anlythree.top/2019/09/06/linux上配置JDK/</id>
     <published>2019-09-06T07:40:33.000Z</published>
     <updated>2019-09-09T02:50:13.137Z</updated>
     
@@ -111,14 +135,14 @@
     
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="http://anlythree.top/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>linux上用防火墙路由80端口请求到其他端口</title>
-    <link href="http://yoursite.com/2019/09/06/linux%E4%B8%8A%E7%94%A8%E9%98%B2%E7%81%AB%E5%A2%99%E8%B7%AF%E7%94%B180%E7%AB%AF%E5%8F%A3%E5%88%B0%E5%85%B6%E4%BB%96%E7%AB%AF%E5%8F%A3/"/>
-    <id>http://yoursite.com/2019/09/06/linux上用防火墙路由80端口到其他端口/</id>
+    <link href="http://anlythree.top/2019/09/06/linux%E4%B8%8A%E7%94%A8%E9%98%B2%E7%81%AB%E5%A2%99%E8%B7%AF%E7%94%B180%E7%AB%AF%E5%8F%A3%E5%88%B0%E5%85%B6%E4%BB%96%E7%AB%AF%E5%8F%A3/"/>
+    <id>http://anlythree.top/2019/09/06/linux上用防火墙路由80端口到其他端口/</id>
     <published>2019-09-06T03:29:37.000Z</published>
     <updated>2019-09-06T07:39:03.537Z</updated>
     
@@ -136,14 +160,14 @@
     
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="http://anlythree.top/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>first-blog</title>
-    <link href="http://yoursite.com/2019/09/03/first-blog/"/>
-    <id>http://yoursite.com/2019/09/03/first-blog/</id>
+    <link href="http://anlythree.top/2019/09/03/first-blog/"/>
+    <id>http://anlythree.top/2019/09/03/first-blog/</id>
     <published>2019-09-03T08:24:36.000Z</published>
     <updated>2019-09-09T02:54:59.474Z</updated>
     
@@ -161,7 +185,7 @@
     
     
     
-      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+      <category term="blog" scheme="http://anlythree.top/tags/blog/"/>
     
   </entry>
   
